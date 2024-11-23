@@ -64,6 +64,7 @@ nav ul li a {
 
 .navbar {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   padding: 0.625rem 1.25rem;
@@ -79,17 +80,19 @@ nav ul li a {
   gap: 1.25rem;
 }
 .hero-content {
-  display: flex;
   margin-left: 7.5rem;
   margin-right: 1rem;
   margin-top: 7.5rem;
 }
+
 .hero-content {
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
   padding: 0.625rem 1.25rem;
 }
+
 .hero-text {
   direction: rtl;
   margin-bottom: 2rem;
@@ -215,6 +218,9 @@ nav ul li a {
   padding: 0 0.5rem 0 0.5rem;
   transform: rotate(-16deg);
 }
+.motiontag:hover .mtag {
+  color: #e55b3c;
+}
 .uitag {
   color: #303030;
   font-size: 1.25rem;
@@ -222,12 +228,18 @@ nav ul li a {
   font-weight: 900;
   text-transform: capitalize;
 }
+.uitag:hover .utag {
+  color: #e55b3c;
+}
 .uxtag {
   color: #303030;
   font-size: 1.25rem;
   font-family: Poppins;
   font-weight: 900;
   text-transform: capitalize;
+}
+.uxtag:hover .xtag {
+  color: #e55b3c;
 }
 .utag {
   background-color: #000000;
@@ -252,6 +264,9 @@ nav ul li a {
   font-weight: 900;
   text-transform: capitalize;
 }
+.brandtag:hover .btag {
+  color: #e55b3c;
+}
 .itag {
   color: #303030;
   font-size: 1.25rem;
@@ -259,12 +274,18 @@ nav ul li a {
   font-weight: 900;
   text-transform: capitalize;
 }
+.itag:hover .intertag {
+  color: #e55b3c;
+}
 .webtag {
   color: #303030;
   font-size: 1.25rem;
   font-family: Poppins;
   font-weight: 900;
   text-transform: capitalize;
+}
+.webtag:hover .wtag {
+  color: #e55b3c;
 }
 .btag {
   background-color: #000000;
@@ -316,16 +337,22 @@ nav ul li a {
   left: 10.75rem;
   top: 10.75rem;
   z-index: 1;
+  display: block;
+  max-width: 100%;
 }
 .top-image {
   z-index: 100;
   position: relative;
+  display: block;
+  max-width: 100%;
 }
 .whitev {
   position: absolute;
   left: 16.6875rem;
   top: -1.0625rem;
   z-index: 0;
+  display: block;
+  max-width: 100%;
 }
 .stargray {
   animation: rotate-loop 25s linear infinite;
@@ -595,3 +622,261 @@ nav ul li a {
   margin-right: 3rem;
   align-items: flex-end;
 }*/
+
+.project-container {
+  opacity: 0;
+  position: relative;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slide-in-left {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.project-container-1 {
+  opacity: 0;
+  position: relative;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slide-in-right {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+#project-1 {
+  animation-name: slide-in-left;
+  animation-delay: 2s;
+}
+
+#project-2 {
+  animation-name: slide-in-right;
+  animation-delay: 2.3s;
+}
+
+#project-3 {
+  animation-name: slide-in-left;
+  animation-delay: 2.6s;
+}
+/* Pulsing effect */
+.social-content img {
+  display: inline-block;
+  animation: pulse 1.5s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+@media (max-width: 48rem) {
+  .main {
+    margin: 0 auto;
+  }
+  .navbar {
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+  }
+  .hero-content {
+    padding: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+  }
+  .hero-vector {
+    display: none;
+  }
+
+  .about h1 {
+    font-size: 2.5rem;
+    text-align: left;
+  }
+  .about {
+    width: 100%;
+  }
+  .hero-text {
+    text-align: right;
+    margin-bottom: 3rem;
+  }
+  .oranges {
+    display: flex;
+    margin-top: 2.5rem;
+  }
+
+  .top-image {
+    max-width: 16.5rem;
+    left: 11rem;
+  }
+  .stargray {
+    left: 17.75rem;
+    top: 7.75rem;
+  }
+  .whitev {
+    left: 19.6875rem;
+    top: -1.0625rem;
+    max-width: 65%;
+  }
+  .scroll {
+    margin-top: 5rem;
+  }
+  .multidicip {
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    background-size: 120%;
+  }
+  .multitext1 {
+    font-size: 2.125rem;
+    -webkit-text-stroke: 0.05rem rgb(255, 255, 255);
+    padding-left: 10rem;
+  }
+  .multitext2 {
+    padding-left: 6rem;
+    font-size: 2.125rem;
+    -webkit-text-stroke: 0.05rem rgb(255, 255, 255);
+  }
+  .multitext3 {
+    font-size: 2.125rem;
+    -webkit-text-stroke: 0.05rem rgb(255, 255, 255);
+  }
+  .roots {
+    margin-right: -4rem;
+    padding-bottom: 1rem;
+  }
+  .multip {
+    margin-left: -3rem;
+    width: 15rem;
+    margin-top: -3rem;
+  }
+  .oranges2 {
+    margin-left: 0;
+  }
+  .multifirst {
+    flex-direction: row;
+    gap: 4rem;
+  }
+  .multithird {
+    flex-direction: row;
+    gap: 3rem;
+    margin-top: 2rem;
+  }
+  .featured {
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    padding-top: 9.5rem;
+  }
+  .project {
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+  }
+  .project-content {
+    padding: 1.5rem 1.5rem 2rem 1.5rem;
+  }
+  .project-title {
+    font-size: 1.5rem;
+  }
+  .project-description {
+    margin-top: 1.5rem;
+    font-size: 1rem;
+  }
+  .view-project-button {
+    margin-top: -2rem;
+    width: 11rem;
+    padding: 1.5rem 1.5rem;
+    font-size: 0.9rem;
+  }
+  .project-thumbnail {
+    margin: 1.5rem;
+    border-radius: 0 11.25rem 11.25rem 0;
+    max-width: 14rem;
+  }
+  .project-thumbnail-1 {
+    max-width: 14rem;
+  }
+  .project-col-2a {
+    padding: 0rem 1.5rem 0rem 1.5rem;
+  }
+  .view-project-button-1 {
+    top: 12rem;
+    right: 1.5rem;
+    width: 11rem;
+    padding: 1.5rem 1.5rem;
+    font-size: 0.9rem;
+  }
+  .stargray2 {
+    left: 1.75rem;
+    top: -7.25rem;
+    width: 40%;
+  }
+  #htmlcsslan {
+    width: 12%;
+  }
+  .tools {
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    background-size: 120%;
+    background-position: top;
+    padding: 20rem 0 3.125rem;
+  }
+  .white-softwares {
+    gap: 2rem;
+  }
+  .black-softwares {
+    gap: 2rem;
+  }
+  .contact-section {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 0;
+    background-size: 94%;
+    padding-top: 8rem;
+  }
+  .contact-title {
+    display: none;
+  }
+  .social-contact {
+    margin-left: 2.5rem;
+    gap: 2rem;
+  }
+  .social-media {
+    font-size: 1rem;
+  }
+  .contact-line {
+    margin-left: 40px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+  }
+  .site-footer {
+    padding: 1rem 0;
+  }
+  .footer-container {
+    margin: 2rem 40px;
+    justify-content: space-between;
+  }
+}
+.project-button:hover {
+  background-color: #e55b3c;
+}
