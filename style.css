@@ -1,5 +1,7 @@
 body {
   background-color: #111111;
+  max-width: 87.5rem;
+  margin: 0 auto;
 }
 * {
   box-sizing: border-box;
@@ -58,7 +60,6 @@ nav ul li a {
   gap: 0.625rem;
   justify-content: space-around;
   align-items: center;
-  padding: 1.25rem;
   background-color: #f0f0f0;
 }
 
@@ -687,7 +688,260 @@ nav ul li a {
   }
 }
 
-@media (max-width: 48rem) {
+@media (max-width: 30rem) {
+  .navbar {
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+  }
+  nav ul li a {
+    font-size: 1rem;
+  }
+  .menu {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .logo img {
+    height: 2rem;
+  }
+  .hero-content {
+    padding: 1rem;
+    gap: 3rem;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+  }
+  .hero-vector {
+    display: none;
+  }
+
+  .about h1 {
+    font-size: 1.8rem;
+    text-align: left;
+  }
+  .about {
+    width: 100%;
+  }
+  .hero-text {
+    text-align: right;
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+  }
+  .oranges {
+    display: flex;
+    margin-top: 2.5rem;
+  }
+
+  .top-image {
+    max-width: 12rem;
+    left: 2rem;
+  }
+  .stargray {
+    left: 6.75rem;
+    top: 5.75rem;
+  }
+  .whitev {
+    left: 8rem;
+    top: -1rem;
+    max-width: 57%;
+  }
+  .scroll {
+    margin-top: 5rem;
+  }
+  .multidicip {
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    background-size: 195%;
+  }
+  .multitext1,
+  .multitext2,
+  .multitext3 {
+    font-size: 1.8rem;
+    -webkit-text-stroke: 0.05rem rgb(255, 255, 255);
+  }
+  .multitext1 {
+    padding-left: 5rem;
+  }
+  .multitext2 {
+    padding-left: 1rem;
+  }
+  .multitext3 {
+    margin-left: 5rem;
+  }
+  .roots,
+  .multip {
+    display: none;
+  }
+
+  .oranges2 {
+    margin-left: 0;
+  }
+  .multifirst {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+  .multithird {
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 4rem;
+    align-items: center;
+  }
+  .btag,
+  .xtag,
+  .utag,
+  .mtag,
+  .intertag,
+  .wtag {
+    transform: rotate(0deg);
+  }
+
+  .featured {
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    padding-top: 7.5rem;
+    align-items: center;
+    margin-bottom: 3rem;
+  }
+  .section-name {
+    font-size: 1.9rem;
+  }
+  .project {
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+  }
+  .project-container,
+  .project-container-1 {
+    border-radius: 0;
+  }
+  .project-content {
+    padding: 2rem;
+  }
+  .project-details {
+    flex-direction: column;
+  }
+  .project-content-1 {
+    flex-direction: column;
+  }
+  .project-title {
+    font-size: 1.5rem;
+  }
+  .project-description {
+    margin-top: 1.5rem;
+    font-size: 1rem;
+  }
+  .view-project-button {
+    width: 9rem;
+    height: 3rem;
+    top: 28rem;
+    padding: 0.5rem 1rem;
+  }
+  .view-project-button-1 {
+    top: 27rem;
+    right: 1.5rem;
+    width: 9rem;
+    height: 3rem;
+    padding: 0.5rem 1rem;
+  }
+  .project-thumbnail,
+  .project-thumbnail-1 {
+    margin: 0;
+    border-radius: 0;
+    max-width: 16rem;
+  }
+  .project-col-1a {
+    order: 2;
+  }
+
+  .project-col-2a {
+    order: 1;
+    padding: 1.5rem 1.5rem 2rem 1.5rem;
+  }
+  .view-project-button-1 {
+    top: 27rem;
+    right: 2.5rem;
+  }
+  .stargray2 {
+    left: 1.75rem;
+    top: -3.25rem;
+    width: 40%;
+  }
+  .stargray2div {
+    margin-bottom: 12rem;
+  }
+  #htmlcsslan {
+    width: 16%;
+  }
+  .rest-of-tools {
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  .tools {
+    background-size: 195%;
+    background-position: top;
+    padding: 20rem 2.5rem 3.125rem;
+  }
+  .white-softwares,
+  .black-softwares {
+    gap: 1rem;
+  }
+  #miro,
+  #chatgpt,
+  #notion,
+  #photoshop,
+  #aftereffect,
+  #illustrator,
+  #figma,
+  #github,
+  #wordpress {
+    width: 16%;
+  }
+  .contact-section {
+    margin-top: 4rem;
+    padding-top: 3rem;
+    margin-right: 0;
+    background-size: 93%;
+  }
+  .contact-title {
+    display: none;
+  }
+  .social-contact {
+    gap: 1rem;
+    margin-left: 2.5rem;
+  }
+  .social-media {
+    font-size: 1rem;
+  }
+  .social-media-information {
+    font-size: 0.8rem;
+  }
+  .contact-line {
+    font-size: 1.5rem;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-left: 2.5rem;
+    padding-bottom: 2.5rem;
+    margin-top: 2rem;
+  }
+  .designed-by,
+  .copyright-text {
+    font-size: 0.8rem;
+  }
+  .site-footer {
+    padding: 1.25rem 0;
+    margin: 0;
+  }
+  .footer-container {
+    flex-direction: column;
+    margin: 0;
+    gap: 1rem;
+  }
+}
+@media (max-width: 48rem) and (min-width: 30.0625rem) {
   .main {
     margin: 0 auto;
   }
@@ -864,7 +1118,7 @@ nav ul li a {
     font-size: 1rem;
   }
   .contact-line {
-    margin-left: 40px;
+    margin-left: 2.5rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
     font-size: 2rem;
@@ -873,10 +1127,103 @@ nav ul li a {
     padding: 1rem 0;
   }
   .footer-container {
-    margin: 2rem 40px;
+    margin: 2rem 2.5rem;
     justify-content: space-between;
   }
 }
-.project-button:hover {
-  background-color: #e55b3c;
+@media (max-width: 64rem) and (min-width: 48.0625rem) {
+  .navbar,
+  .hero-content,
+  .featured,
+  .project,
+  .contact-line,
+  .social-contact {
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+  .hero-content {
+    gap: 1rem;
+    flex-wrap: nowrap;
+    margin-top: 5rem;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  .hero-text {
+    margin-right: -7rem;
+  }
+  .top-image {
+    max-width: 60%;
+  }
+  .stargray {
+    max-width: 70%;
+    left: 4.75rem;
+    top: 6.75rem;
+  }
+  .whitev {
+    left: 8.6875rem;
+    top: -1.0625rem;
+    max-width: 36%;
+  }
+  .about {
+    width: 44%;
+    margin-right: 0rem;
+  }
+  .myphoto {
+    margin-left: 5rem;
+  }
+  .multidicip {
+    background-size: 105%;
+    background-position: bottom;
+  }
+  .multitext1,
+  .multitext2,
+  .multitext3 {
+    font-size: 2.5rem;
+    -webkit-text-stroke: 0.07rem rgb(255, 255, 255);
+  }
+  .multitext3 {
+    margin-left: 7.625rem;
+  }
+  .roots {
+    margin-right: -4rem;
+  }
+  .multip {
+    margin-top: 1rem;
+    margin-left: -2.625rem;
+  }
+  .multifirst {
+    align-items: flex-start;
+  }
+  .view-project-button {
+    top: 18.3125rem;
+  }
+  .stargray2 {
+    top: -9.25rem;
+    width: 35%;
+  }
+  .tools {
+    background-size: 105%;
+  }
+  .contact-section {
+    margin-right: 4rem;
+    background-size: 80%;
+    align-items: center;
+  }
+  .contact-line {
+    font-size: 3rem;
+    margin-bottom: 0;
+  }
+  #contactsvg {
+    max-height: 26rem;
+  }
+  .social-contact {
+    gap: 5rem;
+  }
+  .site-footer {
+    padding: 1.25rem 0;
+  }
+  .footer-container {
+    margin: 3.75rem 4rem;
+  }
 }
