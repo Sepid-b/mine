@@ -1,6 +1,5 @@
 body {
   background-color: #111111;
-  max-width: 87.5rem;
   margin: 0 auto;
 }
 * {
@@ -88,7 +87,7 @@ nav ul li a {
 
 .hero-content {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: flex-start;
   align-items: center;
   padding: 0.625rem 1.25rem;
@@ -447,6 +446,12 @@ nav ul li a {
   position: absolute;
   top: 17.3125rem;
 }
+.view-project-button:hover {
+  background-color: #e55b3c;
+}
+.view-project-button-1:hover {
+  background-color: #e55b3c;
+}
 .project-container-1 {
   border: solid 0.0625rem #fff;
   margin-top: 4rem;
@@ -605,25 +610,6 @@ nav ul li a {
 .contact-title {
   margin-bottom: 3.125rem;
 }
-/*.btn {
-  background-color: rgb(0, 0, 0);
-  border: none;
-  color: white;
-  padding: 12px 16px;
-  font-size: 16px;
-  cursor: pointer;
-  position: absolute;
-  bottom: 14rem;
-  right: 3rem;
-  margin-top: -5rem;
-}
-.back-to-top {
-  display: flex;
-  justify-content: flex-end;
-  margin-right: 3rem;
-  align-items: flex-end;
-}*/
-
 .project-container {
   opacity: 0;
   position: relative;
@@ -755,7 +741,7 @@ nav ul li a {
     gap: 3rem;
     padding-left: 2.5rem;
     padding-right: 2.5rem;
-    background-size: 195%;
+    background-size: 120%;
   }
   .multitext1,
   .multitext2,
@@ -881,7 +867,7 @@ nav ul li a {
     margin-top: 2rem;
   }
   .tools {
-    background-size: 195%;
+    background-size: 120%;
     background-position: top;
     padding: 20rem 2.5rem 3.125rem;
   }
@@ -979,14 +965,14 @@ nav ul li a {
 
   .top-image {
     max-width: 16.5rem;
-    left: 11rem;
+    left: 3rem;
   }
   .stargray {
-    left: 17.75rem;
-    top: 7.75rem;
+    left: 7.75rem;
+    top: 8.75rem;
   }
   .whitev {
-    left: 19.6875rem;
+    left: 9.6875rem;
     top: -1.0625rem;
     max-width: 65%;
   }
@@ -997,44 +983,51 @@ nav ul li a {
     flex-direction: column;
     align-items: center;
     gap: 3rem;
-    margin-left: 2.5rem;
-    margin-right: 2.5rem;
-    background-size: 120%;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    background-size: 125%;
+  }
+  .multitext1,
+  .multitext2,
+  .multitext3 {
+    font-size: 1.8rem;
+    -webkit-text-stroke: 0.05rem rgb(255, 255, 255);
   }
   .multitext1 {
-    font-size: 2.125rem;
-    -webkit-text-stroke: 0.05rem rgb(255, 255, 255);
-    padding-left: 10rem;
+    padding-left: 5rem;
   }
   .multitext2 {
-    padding-left: 6rem;
-    font-size: 2.125rem;
-    -webkit-text-stroke: 0.05rem rgb(255, 255, 255);
+    padding-left: 1rem;
   }
   .multitext3 {
-    font-size: 2.125rem;
-    -webkit-text-stroke: 0.05rem rgb(255, 255, 255);
+    margin-left: 5rem;
   }
-  .roots {
-    margin-right: -4rem;
-    padding-bottom: 1rem;
-  }
+  .roots,
   .multip {
-    margin-left: -3rem;
-    width: 15rem;
-    margin-top: -3rem;
+    display: none;
   }
+
   .oranges2 {
     margin-left: 0;
   }
   .multifirst {
-    flex-direction: row;
-    gap: 4rem;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
   }
   .multithird {
-    flex-direction: row;
-    gap: 3rem;
-    margin-top: 2rem;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 4rem;
+    align-items: center;
+  }
+  .btag,
+  .xtag,
+  .utag,
+  .mtag,
+  .intertag,
+  .wtag {
+    transform: rotate(0deg);
   }
   .featured {
     margin-left: 2.5rem;
@@ -1060,6 +1053,9 @@ nav ul li a {
     width: 11rem;
     padding: 1.5rem 1.5rem;
     font-size: 0.9rem;
+  }
+  .view-project-button:hover {
+    background-color: #e55b3c;
   }
   .project-thumbnail {
     margin: 1.5rem;
@@ -1131,7 +1127,7 @@ nav ul li a {
     justify-content: space-between;
   }
 }
-@media (max-width: 64rem) and (min-width: 48.0625rem) {
+@media (min-width: 48.0625rem) {
   .navbar,
   .hero-content,
   .featured,
@@ -1145,6 +1141,7 @@ nav ul li a {
     gap: 1rem;
     flex-wrap: nowrap;
     margin-top: 5rem;
+    justify-content: center;
   }
   h1 {
     font-size: 2rem;
@@ -1173,8 +1170,12 @@ nav ul li a {
     margin-left: 5rem;
   }
   .multidicip {
-    background-size: 105%;
+    background-size: 81%;
     background-position: bottom;
+    display: flex;
+    margin-top: -3.125rem;
+    justify-content: center;
+    gap: 4rem;
   }
   .multitext1,
   .multitext2,
@@ -1199,11 +1200,12 @@ nav ul li a {
     top: 18.3125rem;
   }
   .stargray2 {
-    top: -9.25rem;
-    width: 35%;
+    top: -0.25rem;
+    left: 14rem;
+    width: 18%;
   }
   .tools {
-    background-size: 105%;
+    background-size: 81%;
   }
   .contact-section {
     margin-right: 4rem;
