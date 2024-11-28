@@ -262,7 +262,14 @@ h3 {
   .navbar,
   .aboutme-container,
   .footer-container {
-    margin-left: 2.5rem;
-    margin-right: 2.5rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+  .navbar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.625rem 1.25rem;
   }
 }
